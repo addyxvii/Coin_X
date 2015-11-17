@@ -32,4 +32,5 @@ var appendRateToBTC = function(data){
     console.log($BTC);
     $BTC.val(data.amnt);
 };
+
 });

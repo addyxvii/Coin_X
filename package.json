@@ -1,0 +1,22 @@
+{
+  "name": "coin_x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addyxvii/Coin_X.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addyxvii/Coin_X/issues"
+  },
+  "homepage": "https://github.com/addyxvii/Coin_X#readme",
+  "dependencies": {
+    "sendgrid": "^1.9.2"
+  }
+}
