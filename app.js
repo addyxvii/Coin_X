@@ -15,21 +15,21 @@ $(function() {
        appendRateToUSD(data);
     });
   });
-USDInput.addEventListener("keyup", function(data){
+USDInput.addEventListener("keyup", function(){
   var USDAmount= USDInput.value;
-  (currentRate * USDAmount);
-     appendRateToBTC(data);
+  var BTCAmount=(USDAmount / currentRate);
+     appendRateToBTC({amnt:BTCAmount});
 
 });
 
 var appendRateToUSD = function(data){
   var $USD= $('.USDAmount');
   console.log($USD);
-    $USD.attr("value", data.amnt);
+    $USD.val(data.amnt);
 };
 var appendRateToBTC = function(data){
   var $BTC= $('.bitCoinAmount');
     console.log($BTC);
-    $BTC.attr("value", data.amnt);
+    $BTC.val(data.amnt);
 };
 });
