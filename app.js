@@ -9,6 +9,7 @@ $(function() {
   });
   var bitCoinAmount= bitCoinInput.value;
   bitCoinInput.addEventListener("keyup", function(){
+    localStorage.setItem('Bitcoin Price', bitCoinAmount)
     var bitCoinAmount= bitCoinInput.value;
     $.post( "https://cex.io/api/convert/BTC/USD", {amnt: bitCoinAmount}, function( data ) {
        console.log(data);
