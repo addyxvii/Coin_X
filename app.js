@@ -7,6 +7,42 @@ $(function() {
      console.log(data);
      currentRate=data.amnt
   });
+  $('.calculator').click(function(){
+    $('.form').toggle("slow", function(){
+  });
+});
+    $('.coinx').click(function(){
+      $('.nav').toggle("slow", function(){
+
+      });
+});
+$(function() {
+    $('.coinx').click(function() {
+       $('.coinx').css('margin-top', '-=200px');
+    });
+});
+    $('.convert').click(function(){
+      $('.inputs').toggle("slow", function(){
+
+      });
+    });
+  $.post("https://cex.io/api/price_stats/BTC/USD",{"lastHours": "5", "maxRespArrSize": 100}, function( data ){
+    console.log(JSON.stringify(data));
+    var prices=[]
+    var dates=[]
+    for(i=0;i<data.length; i++){
+      console.log(data[i], i, data.length)
+     dates.push(moment.unix(data[i].tmsp).format("M, D, YY, h:mm a"))
+       prices.push(data[i].price)
+
+    }
+    $('.data').click(function(){
+      createGraph(prices,dates).toggle("slow")
+    });
+  });
+  // $.get("https://cors-anywhere.herokuapp.com/http://www.coinwarz.com/v1/api/profitability/?apikey=350bd3f6cbab4437b03603afa604b242&algo=sha-256", function( data ){
+  //   console.log(JSON.stringify(data));
+  // });
   var bitCoinAmount= bitCoinInput.value;
   bitCoinInput.addEventListener("keyup", function(){
     localStorage.setItem('Bitcoin Price', bitCoinAmount)

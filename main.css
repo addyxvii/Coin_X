@@ -1,0 +1,79 @@
+
+.coinx{
+  font-size: 100px;
+  font-family: 'Julius Sans One', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+.nav{
+  font-family: 'Julius Sans One', sans-serif;
+}
+.graph{
+  display: block;
+}
+.bitCoinAmount{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.USDAmount{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.userEmail{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.userName{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.userPrice{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.submitButton{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #000;
+}
+.nav{
+  font-family: 'Lato', sans-serif;
+  padding-left: 50px;
+  display: none;
+}
+.graph{
+  display: none;
+  height: 500px;
+  width: 1000px;
+}
+.coinx:hover{
+  cursor: pointer;
+}
+.data:hover{
+  cursor: pointer
+}
+.calculator:hover{
+  cursor: pointer;
+}
+.hashRate{
+  display: none;
+}

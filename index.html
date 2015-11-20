@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Coin X Digital Currency Exchange</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-    </script>
-    <script src="app.js">
-   </script>
-   <script src="message.js">
-   </script>
-  </head>
-  <body>
-    <header>
-     <h1>COIN X</h1>
-      <ul>
-        <li>Convert Currencies to Bitcoin</li>
-          <li> Mining Converson</li>
-            <li>Mining calculator</li>
-              <li>Data</li>
-             </ul>
-            </header>
-             <main>
-              <input class="bitCoinAmount" placeholder="Bitcoin"  type="number">
-             </input>
-              <input class="USDAmount" placeholder="US Dollar" type="number">
-            </input>
-              <input class="userEmail" autocomplete="on" placeholder="e-mail" type="email">
-            </input>
-                <input class="userName" placeholder="name" type="text">
-              </input>
-                <input class="userPrice" placeholder="Bitcoin Price">
-              </input>
-              <input class="submitButton" type="submit" value="Submit">
-            </input>
-             </main>
-        </body>
-      </html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Coin X Digital Currency Exchange
+  </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+  </script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous">
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='main.css' rel="stylesheet" type="text/css" type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js">
+  </script>
+  <script src="app.js">
+  </script>
+  <script src="message.js">
+  </script>
+  <script src="3d.js">
+  </script>
+</head>
+<body>
+  <header>
+    <div class="invisible">
+    </div>
+    <h1 class="coinx">COIN X</h1>
+    <ul class="nav">
+      <li class="convert">Convert Bitcoin to USD</li>
+      <span class="inputs">
+        <input class="bitCoinAmount" placeholder="Bitcoin" type="number">
+        </input>
+        <input class="USDAmount" placeholder="US Dollar" type="number">
+        </input>
+        <input class="userEmail" autocomplete="on" placeholder="e-mail" type="email">
+        </input>
+        <input class="userName" placeholder="name" type="text">
+        </input>
+        <input class="userPrice" placeholder="Bitcoin Price">
+        </input>
+        <input class="submitButton" type="submit" value="Submit">
+        </input>
+      </span>
+      <li class="calculator">Mining calculator</li>
+        <form>
+          <input class="hashRate">
+        </input>
+      </form>
+      <li class="data">Data</li>
+    </ul>
+  </header>
+  <main>
+    <canvas class="graph">
+    </canvas>
+  </main>
+</body>
+
+</html>
