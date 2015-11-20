@@ -74,6 +74,72 @@
 .calculator:hover{
   cursor: pointer;
 }
-.hashRate{
+.mine{
   display: none;
+  background-color: transparent;
+    border: 0px solid;
+    color: #CCC;
 }
+.inputs{
+  display: none;
+
+}
+.nav:hover{
+  cursor: pointer;
+}
+.hashRate{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.power{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+
+}
+.powerCost{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.bitcoinDifficulty{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.blockReward{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.bitcoinToUSD{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.hardwareCost{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.submitButton2{
+  background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    color: #000;

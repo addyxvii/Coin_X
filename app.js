@@ -8,7 +8,7 @@ $(function() {
      currentRate=data.amnt
   });
   $('.calculator').click(function(){
-    $('.form').toggle("slow", function(){
+    $('.mine').toggle("slow", function(){
   });
 });
     $('.coinx').click(function(){
